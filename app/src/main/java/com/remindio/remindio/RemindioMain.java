@@ -9,6 +9,7 @@ import com.parse.Parse;
 import com.parse.ParseACL;
 import com.parse.ParseUser;
 
+
 public class RemindioMain  extends Activity {
 
     @Override
@@ -18,7 +19,7 @@ public class RemindioMain  extends Activity {
 
 
         // Initialize Crash Reporting.
-        ParseCrashReporting.enable(this);
+//        ParseCrashReporting.enable(this);
 
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
