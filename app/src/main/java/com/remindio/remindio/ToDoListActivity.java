@@ -91,7 +91,7 @@ public class ToDoListActivity extends ListActivity {
     }
 
     private void createTodo() {
-        Intent i = new Intent(this, CreateTodo.class);
+        Intent i = new Intent(this, CreateToDo.class);
         startActivityForResult(i, ACTIVITY_CREATE);
     }
 
@@ -191,7 +191,7 @@ public class ToDoListActivity extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-        Intent i = new Intent(this, CreateTodo.class);
+        Intent i = new Intent(this, CreateToDo.class);
 
         i.putExtra("name", todos.get(position).getString("name").toString());
         i.putExtra("position", position);
